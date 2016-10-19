@@ -4,7 +4,7 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import { createServer } from 'http';
 import { SubscriptionServer } from 'subscriptions-transport-ws';
-import { printSchema } from 'graphql/utilities/schemaPrinter'
+import { printSchema } from 'graphql/utilities/schemaPrinter';
 
 import { subscriptionManager } from './data/subscriptions';
 import schema from './data/schema';
@@ -23,7 +23,7 @@ graphQLServer.use('/graphiql', graphiqlExpress({
   endpointURL: '/graphql',
 }));
 
-graphQLServer.use('/schema', function(req, res, _next) {
+graphQLServer.use('/schema', (req, res) => {
   res.set('Content-Type', 'text/plain');
   res.send(printSchema(schema));
 });

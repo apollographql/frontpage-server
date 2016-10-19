@@ -37,5 +37,5 @@ type Subscription {
 
 export default makeExecutableSchema({
   typeDefs: schema,
-  resolvers
+  resolvers,
 });
