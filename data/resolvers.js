@@ -17,6 +17,9 @@ const resolveFunctions = {
     posts() {
       return posts;
     },
+    author(_, { id }) {
+      return find(authors, { id: id });
+    },
   },
   Mutation: {
     upvotePost(_, { postId }) {
