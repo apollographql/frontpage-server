@@ -1,3 +1,7 @@
+## Deprecation notice
+
+This example is deprecated. For an up-to-date full-stack example for web, please check out the [current Apollo Fullstack Tutorial](https://www.apollographql.com/docs/tutorial/introduction/). For iOS (which used to depend on this server), check out the [current iOS tutorial](https://www.apollographql.com/docs/ios/tutorial/)
+
 # Hello World server
 
 The server that is used for the examples on dev.apollodata.com.
